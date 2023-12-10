@@ -9,6 +9,10 @@ Carte de Gestion des Fil Pilote de chauffage, conçus pour être monté sur la c
   - Possible aussi pour des montages moins courant d'avoir une phase sur réseau ENEDIS-EDF et une phase sur Solaire.
 - En option, un module **TIC** (**T**élé **I**nformation **C**lient) pour communiquer avec les Compteur Linky est disponble.
 
+Schema de principe :
+![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/Schematic.png)
+
+La carte :
 ![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/Circuit.png)
 ![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/TopSide.svg)
 ![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/BottomSide.svg)
