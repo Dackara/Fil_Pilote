@@ -1,3 +1,4 @@
+/!\ Projet en cours de réalisation /!\
 # Fil_Pilote
 Carte de Gestion des Fil Pilote de chauffage, conçus pour être monté sur la carte [PVBRAIN 2.0](https://github.com/Bandit-17/PVBRAIN)
 - Possibilité d'utiliser plusieur carte, voir de jumeler deux carte ensemble en n'utilisant qu'un seul i2c extender **SX1509** via un système de pontage.
