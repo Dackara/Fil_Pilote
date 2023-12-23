@@ -1,0 +1,93 @@
+#*******************************************************# 
+#                                                       #
+#    EEEEE  SSSSS  PPPP   H   H   OOO   M   M  EEEEE    #
+#    E      S      P   P  H   H  O   O  MM MM  E        #
+#    EEE    SSSSS  PPPP   HHHHH  O   O  M M M  EEE      #
+#    E          S  P      H   H  O   O  M   M  E        #
+#    EEEEE  SSSSS  P      H   H   OOO   M   M  EEEEE    #
+#                                                       #
+#*******************************************************#
+
+substitutions:
+  node_name: 'fil_pilote'
+  name: 'Fil Pilote'
+  board: 'esp32-s3-devkitc-1' #'esp32dev' #'esp01_1m'
+  framework_type: 'arduino' #'esp-idf'
+  framework_version: '2.0.11' #'2.0.5' #'2.0.9'
+  platform_version: '6.4.0' #'4.4.0' #'6.2.0'
+  area: 'Local Technique'
+  comment: 'Gestion du chauffage par fil pilote et communication Linky.'
+  
+  sx1509_fp_bus: 'sx1509_fp_bus'
+  
+# https://esphome.io/guides/configuration-types#packages
+packages:
+  wifi: !include 
+    file: packages/wifi.yaml
+    vars:
+      ssid: !secret esphome_ssid
+      password: !secret esphome_password
+      power_save_mode: 'none'  #'none' #'light' #'hight'
+      static_ip: '192.168.0.21'
+      gateway: '192.168.0.109'
+      subnet: '255.255.255.0'
+      ap_ssid: 'Espilote Fallback Hotspot'
+  device_base: !include packages/device_base.yaml
+  common: !include
+    file: packages/common.yaml
+    vars:
+      sx1509_fp: ${sx1509_fp_bus}
+      sx1509_address_fp: '0x3E' #'0x3F' #'0x70' #'0x71'
+      i2c_id_fp: 'bus_i2c_1'
+      i2c_sda_fp: 'GPIO8'
+      i2c_scl_fp: 'GPIO9'
+  fil-pilote_x4: !include
+    file: packages/fil-pilote.yaml
+    vars:
+      fp1_id: 'fp1'
+      fp2_id: 'fp2'
+      fp3_id: 'fp3'
+      fp4_id: 'fp4'
+      fp1_name: 'FP1'
+      fp2_name: 'FP2'
+      fp3_name: 'FP3'
+      fp4_name: 'FP4'
+      fp1_pos_gpio: '0'
+      fp1_neg_gpio: '1'
+      fp2_pos_gpio: '2'
+      fp2_neg_gpio: '3'
+      fp3_pos_gpio: '4'
+      fp3_neg_gpio: '5'
+      fp4_pos_gpio: '6'
+      fp4_neg_gpio: '7'
+      sx1509_fp: ${sx1509_fp_bus}
+  fil-pilote_x8: !include
+    file: packages/fil-pilote.yaml
+    vars:
+      fp1_id: 'fp5'
+      fp2_id: 'fp6'
+      fp3_id: 'fp7'
+      fp4_id: 'fp8'
+      fp1_name: 'FP5'
+      fp2_name: 'FP6'
+      fp3_name: 'FP7'
+      fp4_name: 'FP8'
+      fp1_pos_gpio: '8'
+      fp1_neg_gpio: '9'
+      fp2_pos_gpio: '10'
+      fp2_neg_gpio: '11'
+      fp3_pos_gpio: '12'
+      fp3_neg_gpio: '13'
+      fp4_pos_gpio: '14'
+      fp4_neg_gpio: '15'
+      sx1509_fp: ${sx1509_fp_bus}
+  teleinfo: !include 
+    file: packages/teleinfo_historique.yaml
+#    file: packages/teleinfo_standard.yaml
+    vars:
+      linky_name: 'Linky'
+      tic_id: 'myteleinfo'
+      tic_uart_id: 'tic_uart_bus'
+      tic_rx_pin: 'GPIO3'
+      tic_tx_pin: 'GPIO1'
+      tic_update_interval: '5s'
