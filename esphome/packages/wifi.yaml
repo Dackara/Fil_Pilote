@@ -1,0 +1,46 @@
+# WiFi Component: https://esphome.io/components/wifi.html
+wifi:
+  ssid: ${ssid}
+  password: ${password}
+  # Economie d'energie du wifi, (#light par defaut sur ESP32). Plus l'économie est grande, plus les déconnexions peuvent être fréquentes.
+  power_save_mode: ${power_save_mode}
+  # Optional manual IP
+  manual_ip:
+    static_ip: ${static_ip}
+    gateway: ${gateway}
+    subnet: ${subnet}
+  ap:
+    ssid: ${ap_ssid}
+    password: ${password}
+
+# Sensor:  https://esphome.io/components/sensor/index.html
+sensor:
+  # WiFi
+  - platform: wifi_signal
+    name: "${name} ESP WiFi Signal"
+    id: wifi_signal_db
+    update_interval: 10s     
+    entity_category: "diagnostic"
+
+  - platform: copy # Reports the WiFi signal strength in %
+    source_id: wifi_signal_db
+    name: "${name} ESP WiFi Signal Percent"
+    filters:
+      - lambda: return min(max(2 * (x + 100.0), 0.0), 100.0);
+    unit_of_measurement: "Signal %"
+    entity_category: "diagnostic"
+
+text_sensor:
+  - platform: wifi_info
+    ip_address:
+      name: ${name} ESP IP Address
+    ssid:
+      name: ${name} ESP Connected SSID
+    bssid:
+      name: ${name} ESP Connected BSSID
+    mac_address:
+      name: ${name} ESP Mac Wifi Address
+    scan_results:
+      name: ${name} ESP Latest Scan Results
+    dns_address:
+      name: ${name} ESP DNS Address
