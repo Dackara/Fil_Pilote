@@ -15,8 +15,8 @@ Carte de Gestion des Fil Pilote de chauffage, conçus pour être monté sur la c
 
 ## La carte :
 ![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/Circuit.png)
-![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/TopSide.svg)
-![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/BottomSide.svg)
+![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/TopSide.png)
+![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/BottomSide.png)
 ![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/3D_View.png)
 
 ## Fonctionnement du Fil Pilote :
