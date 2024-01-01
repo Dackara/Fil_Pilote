@@ -1,7 +1,7 @@
 `/!\ Projet en cours de réalisation /!\
 Quelques test sont encore necessaire /!\`
 # Fil_Pilote
-Carte de Gestion Centralisé des `Fil Pilote` de chauffage, conçus pour être monté sur la carte [PVBRAIN 2.0](https://github.com/Bandit-17/PVBRAIN) dévellopé par [Bandit-17](https://github.com/Bandit-17) [SeByDocKy](https://github.com/SeByDocKy) de la chaine Youtube [e-2-nomy](https://www.youtube.com/@e2nomy).
+Carte de Gestion Centralisé des `Fil Pilote` de chauffage, conçus pour être monté sur la carte [PVBRAIN v2.0](https://github.com/Bandit-17/PVBRAIN) dévellopé par [Bandit-17](https://github.com/Bandit-17) et [SeByDocKy](https://github.com/SeByDocKy) de la chaine Youtube [e-2-nomy](https://www.youtube.com/@e2nomy).
 
 Dévellopé pour [ESPHome](http://esphome.io).
 
@@ -32,8 +32,13 @@ L'intégralité des fichier présent de [ce répertoire](https://github.com/Dack
 ![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/BottomSide.png)
 ![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/3D_View.png)
 
-## Fonctionnement du Fil Pilote :
-![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/Signal_fil_pilote.png)
+### Fonctionnement du Fil Pilote :
+- Principe de fonctionnement en [image](https://github.com/Dackara/Fil_Pilote/blob/main/Image/Signal_fil_pilote.png).
+
+### Crédit :
+- Schéma électronique : `@Dackara` & `@Luc`
+- Designe PCB : `@Dackara` & `@Bandit-17`
+- Code esphome : `@Dackara`
 
 ### Si vous aimez mon travail et souhaitez me soutenir :
 
