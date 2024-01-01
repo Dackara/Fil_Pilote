@@ -1,0 +1,408 @@
+# UART: https://esphome.io/custom/uart.html
+uart:
+  - id: ${tic_uart_id}
+    rx_pin: ${tic_rx_pin}
+    tx_pin: ${tic_tx_pin}
+    baud_rate: '9600'
+    parity: EVEN
+    data_bits: 7
+#    stop_bits: 1
+    
+# TeleInfo Client : # https://esphome.io/components/sensor/teleinfo.html
+teleinfo:
+  - uart_id: ${tic_uart_id}
+    id: ${tic_id}
+    update_interval: ${tic_update_interval}
+    historical_mode: false
+    
+# Sensor:  https://esphome.io/components/sensor/index.html
+sensor:
+  #--------------
+  # MODE STANDARD
+  #--------------
+  # # Énergie active soutirée totale
+  # - platform: teleinfo
+  #   tag_name: "EAST"
+  #   name: "${linky_name} Energie Soutirée"
+  #   unit_of_measurement: kWh
+  #   device_class: energy
+  #   state_class: total_increasing
+  #   accuracy_decimals: 3
+  #   filters:
+  #     - multiply: 0.001
+  # # Energie active soutirée Fournisseur, index 01
+  # - platform: teleinfo
+  #   tag_name: "EASF01"
+  #   name: "${linky_name} Energie Soutirée Tempo Bleu HC"
+  #   unit_of_measurement: kWh
+  #   device_class: energy
+  #   state_class: total_increasing
+  #   accuracy_decimals: 3
+  #   filters:
+  #     - multiply: 0.001
+  # # Energie active soutirée Fournisseur, index 02
+  # - platform: teleinfo
+  #   tag_name: "EASF02"
+  #   name: "${linky_name} Energie Soutirée Tempo Bleu HP"
+  #   unit_of_measurement: kWh
+  #   device_class: energy
+  #   state_class: total_increasing
+  #   accuracy_decimals: 3
+  #   filters:
+  #     - multiply: 0.001
+  # # Energie active soutirée Fournisseur, index 03
+  # - platform: teleinfo
+  #   tag_name: "EASF03"
+  #   name: "${linky_name} Energie Soutirée Tempo Blanc HC"
+  #   unit_of_measurement: kWh
+  #   device_class: energy
+  #   state_class: total_increasing
+  #   accuracy_decimals: 3
+  #   filters:
+  #     - multiply: 0.001
+  # # Energie active soutirée Fournisseur, index 04
+  # - platform: teleinfo
+  #   tag_name: "EASF04"
+  #   name: "${linky_name} Energie Soutirée Tempo Blanc HP"
+  #   unit_of_measurement: kWh
+  #   device_class: energy
+  #   state_class: total_increasing
+  #   accuracy_decimals: 3
+  #   filters:
+  #     - multiply: 0.001
+  # # Energie active soutirée Fournisseur, index 05
+  # - platform: teleinfo
+  #   tag_name: "EASF05"
+  #   name: "${linky_name} Energie Soutirée Tempo Rouge HC"
+  #   unit_of_measurement: kWh
+  #   device_class: energy
+  #   state_class: total_increasing
+  #   accuracy_decimals: 3
+  #   filters:
+  #     - multiply: 0.001
+  # # Energie active soutirée Fournisseur, index 06
+  # - platform: teleinfo
+  #   tag_name: "EASF06"
+  #   name: "${linky_name} Energie Soutirée Tempo Rouge HP"
+  #   unit_of_measurement: kWh
+  #   device_class: energy
+  #   state_class: total_increasing
+  #   accuracy_decimals: 3
+  #   filters:
+  #     - multiply: 0.001
+  # # Energie active soutirée Fournisseur, index 07
+  # - platform: teleinfo
+  #   tag_name: "EASF07"
+  #   name: "${linky_name} Energie Soutirée F07"
+  #   unit_of_measurement: kWh
+  #   device_class: energy
+  #   state_class: total_increasing
+  #   accuracy_decimals: 3
+  #   filters:
+  #     - multiply: 0.001
+  # # Energie active soutirée Fournisseur, index 08
+  # - platform: teleinfo
+  #   tag_name: "EASF08"
+  #   name: "${linky_name} Energie Soutirée F08"
+  #   unit_of_measurement: kWh
+  #   device_class: energy
+  #   state_class: total_increasing
+  #   accuracy_decimals: 3
+  #   filters:
+  #     - multiply: 0.001
+  # # Energie active soutirée Fournisseur, index 09
+  # - platform: teleinfo
+  #   tag_name: "EASF09"
+  #   name: "${linky_name} Energie Soutirée F09"
+  #   unit_of_measurement: kWh
+  #   device_class: energy
+  #   state_class: total_increasing
+  #   accuracy_decimals: 3
+  #   filters:
+  #     - multiply: 0.001
+  # # Energie active soutirée Fournisseur, index 10
+  # - platform: teleinfo
+  #   tag_name: "EASF10"
+  #   name: "${linky_name} Energie Soutirée F10"
+  #   unit_of_measurement: kWh
+  #   device_class: energy
+  #   state_class: total_increasing
+  #   accuracy_decimals: 3
+  #   filters:
+  #     - multiply: 0.001
+  # # Energie active soutirée Distributeur, index 01
+  # - platform: teleinfo
+  #   tag_name: "EASD01"
+  #   name: "${linky_name} Energie Soutirée D01"
+  #   unit_of_measurement: kWh
+  #   device_class: energy
+  #   state_class: total_increasing
+  #   accuracy_decimals: 3
+  #   filters:
+  #     - multiply: 0.001
+  # # Energie active soutirée Distributeur, index 02
+  # - platform: teleinfo
+  #   tag_name: "EASD02"
+  #   name: "${linky_name} Energie Soutirée D02"
+  #   unit_of_measurement: kWh
+  #   device_class: energy
+  #   state_class: total_increasing
+  #   accuracy_decimals: 3
+  #   filters:
+  #     - multiply: 0.001
+  # # Energie active soutirée Distributeur, index 03
+  # - platform: teleinfo
+  #   tag_name: "EASD03"
+  #   name: "${linky_name} Energie Soutirée D03"
+  #   unit_of_measurement: kWh
+  #   device_class: energy
+  #   state_class: total_increasing
+  #   accuracy_decimals: 3
+  #   filters:
+  #     - multiply: 0.001
+  # # Energie active soutirée Distributeur, index 04
+  # - platform: teleinfo
+  #   tag_name: "EASD04"
+  #   name: "${linky_name} Energie Soutirée D04"
+  #   unit_of_measurement: kWh
+  #   device_class: energy
+  #   state_class: total_increasing
+  #   accuracy_decimals: 3
+  #   filters:
+  #     - multiply: 0.001
+  # # Courant Efficace, phase 1
+  # - platform: teleinfo
+  #   tag_name: "IRMS1"
+  #   name: "${linky_name} Courant Efficace"
+  #   unit_of_measurement: A
+  #   device_class: current
+  #   state_class: measurement
+  # # Tension Efficace, phase 1
+  # - platform: teleinfo
+  #   tag_name: "URMS1"
+  #   name: "${linky_name} Tension Efficace"
+  #   unit_of_measurement: V
+  #   device_class: voltage
+  #   state_class: measurement
+  # Puissance app. de référence
+  # - platform: teleinfo
+  #   tag_name: "PREF"
+  #   name: "${linky_name} Puissance Apparente Référence"
+  #   state_class: measurement
+  #   device_class: apparent_power
+  #   unit_of_measurement: VA
+  #   filters:
+  #     - multiply: 1000
+  # # Puissance app. de coupure
+  # - platform: teleinfo
+  #   tag_name: "PCOUP"
+  #   name: "${linky_name} Puissance Apparente Coupure"
+  #   state_class: measurement
+  #   device_class: apparent_power
+  #   unit_of_measurement: VA
+  #   filters:
+  #     - multiply: 1000
+  # # Puissance app. Instantanée Soutirée
+  # - platform: teleinfo
+  #   tag_name: "SINSTS"
+  #   name: "${linky_name} Puissance Apparente Instantanée Soutirée"
+  #   unit_of_measurement: VA
+  #   state_class: measurement
+  #   device_class: apparent_power
+  # # Puissance app. max. soutirée
+  # - platform: teleinfo
+  #   tag_name: "SMAXSN"
+  #   name: "${linky_name} Puissance Apparente Maximale Soutirée"
+  #   unit_of_measurement: VA
+  #   state_class: measurement
+  #   device_class: apparent_power
+  # # Point n de la courbe de charge active soutirée
+  # - platform: teleinfo
+  #   tag_name: "CCASN"
+  #   name: "${linky_name} Puissance Active Soutirée"
+  #   unit_of_measurement: W
+  #   state_class: measurement
+  #   device_class: power
+  # # Point n-1 de la courbe de charge active soutirée
+  # - platform: teleinfo
+  #   tag_name: "CCASN-1"
+  #   name: "${linky_name} Puissance Active Soutirée N-1"
+  #   unit_of_measurement: W
+  #   state_class: measurement
+  #   device_class: power
+  # Tension Moyenne, phase 1
+  # - platform: teleinfo
+  #   tag_name: "UMOY1"
+  #   name: "${linky_name} Tension Moyenne"
+  #   unit_of_measurement: V
+  #   device_class: voltage
+  #   state_class: measurement
+  #-------------------------
+  # MODE STANDARD - TRIPHASÉ
+  #-------------------------
+  # # Courant Efficace, phase 2
+  # - platform: teleinfo
+  #   tag_name: "IRMS2"
+  #   name: "${linky_name} Courant Efficace Phase 2"
+  #   unit_of_measurement: A
+  #   device_class: current
+  #   state_class: measurement
+  # # Courant Efficace, phase 3
+  # - platform: teleinfo
+  #   tag_name: "IRMS3"
+  #   name: "${linky_name} Courant Efficace Phase 3"
+  #   unit_of_measurement: A
+  #   device_class: current
+  #   state_class: measurement
+  # # Tension Efficace, phase 2
+  # - platform: teleinfo
+  #   tag_name: "URMS2"
+  #   name: "${linky_name} Tension Efficace Phase 2"
+  #   unit_of_measurement: V
+  #   device_class: voltage
+  #   state_class: measurement
+  # # Tension Efficace, phase 3
+  # - platform: teleinfo
+  #   tag_name: "URMS3"
+  #   name: "${linky_name} Tension Efficace Phase 3"
+  #   unit_of_measurement: V
+  #   device_class: voltage
+  #   state_class: measurement
+  # # Puissance app. Instantanée Soutirée, phase 1
+  # - platform: teleinfo
+  #   tag_name: "SINSTS1"
+  #   name: "${linky_name} Puissance Apparente Instantanée Soutirée Phase 1"
+  #   unit_of_measurement: VA
+  #   state_class: measurement
+  #   device_class: apparent_power
+  # # Puissance app. Instantanée Soutirée, phase 2
+  # - platform: teleinfo
+  #   tag_name: "SINSTS2"
+  #   name: "${linky_name} Puissance Apparente Instantanée Soutirée Phase 2"
+  #   unit_of_measurement: VA
+  #   state_class: measurement
+  #   device_class: apparent_power
+  # # Puissance app. Instantanée Soutirée, phase 3
+  # - platform: teleinfo
+  #   tag_name: "SINSTS3"
+  #   name: "${linky_name} Puissance Apparente Instantanée Soutirée Phase 3"
+  #   unit_of_measurement: VA
+  #   state_class: measurement
+  #   device_class: apparent_power
+  # # Puissance app. max. Soutirée, phase 1
+  # - platform: teleinfo
+  #   tag_name: "SMAXSN1"
+  #   name: "${linky_name} Puissance Apparente Maximale Soutirée Phase 1"
+  #   unit_of_measurement: VA
+  #   state_class: measurement
+  #   device_class: apparent_power
+  # # Puissance app. max. Soutirée, phase 2
+  # - platform: teleinfo
+  #   tag_name: "SMAXSN2"
+  #   name: "${linky_name} Puissance Apparente Maximale Soutirée Phase 2"
+  #   unit_of_measurement: VA
+  #   state_class: measurement
+  #   device_class: apparent_power
+  # # Puissance app. max. Soutirée, phase 3
+  # - platform: teleinfo
+  #   tag_name: "SMAXSN3"
+  #   name: "${linky_name} Puissance Apparente Maximale Soutirée Phase 3"
+  #   unit_of_measurement: VA
+  #   state_class: measurement
+  #   device_class: apparent_power
+  # # Tension Moyenne, phase 2
+  # - platform: teleinfo
+  #   tag_name: "UMOY2"
+  #   name: "${linky_name} Tension Moyenne Phase 2"
+  #   unit_of_measurement: V
+  #   device_class: voltage
+  #   state_class: measurement
+  # # Tension Moyenne, phase 3
+  # - platform: teleinfo
+  #   tag_name: "UMOY3"
+  #   name: "${linky_name} Tension Moyenne Phase 3"
+  #   unit_of_measurement: V
+  #   device_class: voltage
+  #   state_class: measurement
+  #----------------------------
+  # MODE STANDARD - PRODUCTEURS
+  #----------------------------
+  # # Energie active injectée totale
+  # - platform: teleinfo
+  #   tag_name: "EAIT"
+  #   name: "${linky_name} Energie Injectée"
+  #   unit_of_measurement: kWh
+  #   device_class: energy
+  #   state_class: total_increasing
+  #   accuracy_decimals: 3
+  #   filters:
+  #     - multiply: 0.001
+  # # Puissance app. Instantanée Injectée
+  # - platform: teleinfo
+  #   tag_name: "SINSTI"
+  #   name: "${linky_name} Puissance Apparente Instantanée Injectée"
+  #   unit_of_measurement: VA
+  #   state_class: measurement
+  #   device_class: apparent_power
+  # # Puissance app. Maximale Injectée
+  # - platform: teleinfo
+  #   tag_name: "SMAXIN"
+  #   name: "${linky_name} Puissance Apparente Maximale Injectée"
+  #   unit_of_measurement: VA
+  #   state_class: measurement
+  #   device_class: apparent_power
+  # # Point n de la courbe de charge active injectée
+  # - platform: teleinfo
+  #   tag_name: "CCAIN"
+  #   name: "${linky_name} Puissance Active Injectée"
+  #   unit_of_measurement: W
+  #   state_class: measurement
+  #   device_class: power
+  # # Point n-1 de la courbe de charge active injectée
+  # - platform: teleinfo
+  #   tag_name: "CCAIN-1"
+  #   name: "${linky_name} Puissance Active Injectée N-1"
+  #   unit_of_measurement: W
+  #   state_class: measurement
+  #   device_class: power
+  
+text_sensor:
+  #--------------
+  # MODE STANDARD
+  #--------------
+  # # Adresse Secondaire du Compteur
+  # - platform: teleinfo
+  #   tag_name: "ADSC"
+  #   name: "${linky_name} Adresse Secondaire"
+  # Nom du calendrier tarifaire fournisseur
+  # - platform: teleinfo
+  #   tag_name: "NGTF"
+  #   name: "${linky_name} Calendrier Tarifaire"
+  #   icon: mdi:information
+  # # Libellé tarif fournisseur en cours
+  # - platform: teleinfo
+  #   tag_name: "LTARF"
+  #   name: "${linky_name} Tarif Actuel"
+  #   icon: mdi:information
+  # Registre de Statuts
+  # - platform: teleinfo
+  #   tag_name: "STGE"
+  #   name: "${linky_name} Registre de Statuts"
+  #   icon: mdi:information
+  # # Message court
+  # - platform: teleinfo
+  #   tag_name: "MSG1"
+  #   name: "${linky_name} Message court"
+  # # Message Ultra court
+  # - platform: teleinfo
+  #   tag_name: "MSG2"
+  #   name: "${linky_name} Message Ultra court"
+  # # PRM
+  # - platform: teleinfo
+  #   tag_name: "PRM"
+  #   name: "${linky_name} PRM"
+  # # Relais
+  # - platform: teleinfo
+  #   tag_name: "RELAIS"
+  #   name: "${linky_name} Relais"
+      
