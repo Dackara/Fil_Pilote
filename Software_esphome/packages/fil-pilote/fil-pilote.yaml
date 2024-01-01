@@ -1,107 +1,107 @@
 select:
   - platform: template
-    name: '${fp_name} Mode'
-    id: ${fp_id}_mode
+    name: "${fp1_name} Mode"
+    id: ${fp1_id}_mode
     options:
-     - 'Confort'    #Pas de signal envoyé
-     - 'Eco'        #Alternance pleine
-     - 'Hors-gel'   #Alternance négative
-     - 'Arrêt'      #Alternance positive
-     - 'Confort -1' #Alternance pleine temporisé (4'57'off/3'on/..)
-     - 'Confort -2' #Alternance pleine temporisé (4'53'off/7'on/..)
-    initial_option: 'Confort'
+     - "Confort"    #Pas de signal envoyé
+     - "Eco"        #Alternance pleine
+     - "Hors-gel"   #Alternance négative
+     - "Arrêt"      #Alternance positive
+     - "Confort -1" #Alternance pleine temporisé (4'57"off/3"on/..)
+     - "Confort -2" #Alternance pleine temporisé (4'53"off/7"on/..)
+    initial_option: "Confort"
     optimistic: true
     set_action:
       - logger.log:
-          format: 'Chosen option: %s'
-          args: ['x.c_str()']
+          format: "Chosen option: %s"
+          args: ["x.c_str()"]
       - lambda: |-
-          id(${fp_id}_mode).state = x.c_str(); 
+          id(${fp1_id}_mode).state = x.c_str(); 
     on_value:
       then:
         - if:
             condition:
               - lambda: |- 
-                  return id(${fp_id}_mode).state == 'Confort' ;
+                  return id(${fp1_id}_mode).state == "Confort" ;
             then:
-              - switch.turn_off: ${fp_id}_positif
-              - switch.turn_off: ${fp_id}_negatif
+              - switch.turn_off: ${fp1_id}_positif
+              - switch.turn_off: ${fp1_id}_negatif
         - if:
             condition:
               - lambda: |- 
-                  return id(${fp_id}_mode).state == 'Eco' ;
+                  return id(${fp1_id}_mode).state == "Eco" ;
             then:
-              - switch.turn_on: ${fp_id}_positif
-              - switch.turn_on: ${fp_id}_negatif
+              - switch.turn_on: ${fp1_id}_positif
+              - switch.turn_on: ${fp1_id}_negatif
         - if:
             condition:
               - lambda: |- 
-                  return id(${fp_id}_mode).state == 'Hors-gel' ;
+                  return id(${fp1_id}_mode).state == "Hors-gel" ;
             then:
-              - switch.turn_off: ${fp_id}_positif
-              - switch.turn_on: ${fp_id}_negatif
+              - switch.turn_off: ${fp1_id}_positif
+              - switch.turn_on: ${fp1_id}_negatif
         - if:
             condition:
               - lambda: |- 
-                  return id(${fp_id}_mode).state == 'Arrêt' ;
+                  return id(${fp1_id}_mode).state == "Arrêt" ;
             then:
-              - switch.turn_on: ${fp_id}_positif
-              - switch.turn_off: ${fp_id}_negatif
+              - switch.turn_on: ${fp1_id}_positif
+              - switch.turn_off: ${fp1_id}_negatif
         - while:
             condition:
               - lambda: |- 
-                  return id(${fp_id}_mode).state == 'Confort -1' ;
+                  return id(${fp1_id}_mode).state == "Confort -1" ;
             then:
-              - switch.turn_off: ${fp_id}_positif
-              - switch.turn_off: ${fp_id}_negatif
+              - switch.turn_off: ${fp1_id}_positif
+              - switch.turn_off: ${fp1_id}_negatif
               - delay: 
                   minutes: 4
                   seconds: 57
-              - switch.turn_on: ${fp_id}_positif
-              - switch.turn_on: ${fp_id}_negatif
+              - switch.turn_on: ${fp1_id}_positif
+              - switch.turn_on: ${fp1_id}_negatif
               - delay: 3s
         - while:
             condition:
               - lambda: |- 
-                  return id(${fp_id}_mode).state == 'Confort -2' ;
+                  return id(${fp1_id}_mode).state == "Confort -2" ;
             then:
-              - switch.turn_off: ${fp_id}_positif
-              - switch.turn_off: ${fp_id}_negatif
+              - switch.turn_off: ${fp1_id}_positif
+              - switch.turn_off: ${fp1_id}_negatif
               - delay: 
                   minutes: 4
                   seconds: 53
-              - switch.turn_on: ${fp_id}_positif
-              - switch.turn_on: ${fp_id}_negatif
+              - switch.turn_on: ${fp1_id}_positif
+              - switch.turn_on: ${fp1_id}_negatif
               - delay: 7s
          
 # Individual outputs
 output:
   - platform: gpio
-    id: '${sx1509_fp}_output_${fp_pos_gpio}'
+    id: ${sx1509_fp}_output_${fp1_pos_gpio}
     pin:
       sx1509: ${sx1509_fp}
-      number: ${fp_pos_gpio}
+      number: ${fp1_pos_gpio}
       mode:
         output: true
       inverted: false
     
   - platform: gpio
-    id: '${sx1509_fp}_output_${fp_neg_gpio}'
+    id: ${sx1509_fp}_output_${fp1_neg_gpio}
     pin:
       sx1509: ${sx1509_fp}
-      number: ${fp_neg_gpio}
+      number: ${fp1_neg_gpio}
       mode:
         output: true
       inverted: false
     
 switch:
   - platform: output
-    name: '${fp_name} Alternance Positive'
-    output: '${sx1509_fp}_output_${fp_pos_gpio}'
-    id: ${fp_id}_positif
+    name: '${fp1_name} Alternance Positive'
+    output: ${sx1509_fp}_output_${fp1_pos_gpio}
+    id: ${fp1_id}_positif
       
   - platform: output
-    name: '${fp_name} Alternance Négative'
-    output: '${sx1509_fp}_output_${fp_neg_gpio}'
-    id: ${fp_id}_negatif
+    name: "${fp1_name} Alternance Négative"
+    output: ${sx1509_fp}_output_${fp1_neg_gpio}
+    id: ${fp1_id}_negatif
     
