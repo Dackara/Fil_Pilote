@@ -27,6 +27,8 @@ L'intégralité des fichier présent de [ce répertoire](https://github.com/Dack
 ![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/Schematic.png)
 
 ## La carte :
+- **Gerber** files : `arrive dès que définitivement validé`
+- **B**ill **O**f **M**aterials : [BOM files](https://github.com/Dackara/Fil_Pilote/blob/main/Hardware/BOM_Fil_Pilote_Mini_v1_2024-01-01.csv)
 ![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/Circuit.png)
 ![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/TopSide.png)
 ![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/BottomSide.png)
