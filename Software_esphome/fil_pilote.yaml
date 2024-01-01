@@ -57,37 +57,37 @@ packages:
   fil_pilote_zone_1: !include
     file: packages/fil-pilote/fil-pilote.yaml
     vars:
-      fp_id: 'fp1'
-      fp_name: 'Fil Pilote Zone 1'
-      fp_pos_gpio: '0'
-      fp_neg_gpio: '1'
+      fp1_id: 'fp1'
+      fp1_name: 'Zone 1'
+      fp1_pos_gpio: '0'
+      fp1_neg_gpio: '1'
       sx1509_fp: ${sx1509_fp_bus}
 
   fil_pilote_zone_2: !include
     file: packages/fil-pilote/fil-pilote.yaml
     vars:
-      fp_id: 'fp2'
-      fp_name: 'Fil Pilote Zone 2'
-      fp_pos_gpio: '2'
-      fp_neg_gpio: '3'
+      fp1_id: 'fp2'
+      fp1_name: 'Zone 2'
+      fp1_pos_gpio: '2'
+      fp1_neg_gpio: '3'
       sx1509_fp: ${sx1509_fp_bus}
       
   fil_pilote_zone_3: !include
     file: packages/fil-pilote/fil-pilote.yaml
     vars:
-      fp_id: 'fp3'
-      fp_name: 'Fil Pilote Zone 3'
-      fp_pos_gpio: '4'
-      fp_neg_gpio: '5'
+      fp1_id: 'fp3'
+      fp1_name: 'Zone 3'
+      fp1_pos_gpio: '4'
+      fp1_neg_gpio: '5'
       sx1509_fp: ${sx1509_fp_bus}
       
   fil_pilote_zone_4: !include
     file: packages/fil-pilote/fil-pilote.yaml
     vars:
-      fp_id: 'fp4'
-      fp_name: 'Fil Pilote Zone 4'
-      fp_pos_gpio: '6'
-      fp_neg_gpio: '7'
+      fp1_id: 'fp4'
+      fp1_name: 'Zone 4'
+      fp1_pos_gpio: '6'
+      fp1_neg_gpio: '7'
       sx1509_fp: ${sx1509_fp_bus}
 
 ###############################################
@@ -99,37 +99,37 @@ packages:
   fil_pilote_zone_5: !include                 #
     file: packages/fil-pilote/fil-pilote.yaml #
     vars:                                     #
-      fp_id: 'fp5'                            #
-      fp_name: 'Fil Pilote Zone 5'            #
-      fp_pos_gpio: '8'                        #
-      fp_neg_gpio: '9'                        #
+      fp1_id: 'fp5'                           #
+      fp1_name: 'Zone 5'                      #
+      fp1_pos_gpio: '8'                       #
+      fp1_neg_gpio: '9'                       #
       sx1509_fp: ${sx1509_fp_bus}             #
 #                                             #
   fil_pilote_zone_6: !include                 #
     file: packages/fil-pilote/fil-pilote.yaml #
     vars:                                     #
-      fp_id: 'fp6'                            #
-      fp_name: 'Fil Pilote Zone 6'            #
-      fp_pos_gpio: '10'                       #
-      fp_neg_gpio: '11'                       #
+      fp1_id: 'fp6'                           #
+      fp1_name: 'Zone 6'                      #
+      fp1_pos_gpio: '10'                      #
+      fp1_neg_gpio: '11'                      #
       sx1509_fp: ${sx1509_fp_bus}             #
 #                                             #
   fil_pilote_zone_7: !include                 #
     file: packages/fil-pilote/fil-pilote.yaml #
     vars:                                     #
-      fp_id: 'fp7'                            #
-      fp_name: 'Fil Pilote Zone 7'            #
-      fp_pos_gpio: '12'                       #
-      fp_neg_gpio: '13'                       #
+      fp1_id: 'fp7'                           #
+      fp1_name: 'Zone 7'                      #
+      fp1_pos_gpio: '12'                      #
+      fp1_neg_gpio: '13'                      #
       sx1509_fp: ${sx1509_fp_bus}             #
 #                                             #
   fil_pilote_zone_8: !include                 #
     file: packages/fil-pilote/fil-pilote.yaml #
     vars:                                     #
-      fp_id: 'fp8'                            #
-      fp_name: 'Fil Pilote Zone 8'            #
-      fp_pos_gpio: '14'                       #
-      fp_neg_gpio: '15'                       #
+      fp1_id: 'fp8'                           #
+      fp1_name: 'Zone 8'                      #
+      fp1_pos_gpio: '14'                      #
+      fp1_neg_gpio: '15'                      #
       sx1509_fp: ${sx1509_fp_bus}             #
 #                                             #
 ###############################################
