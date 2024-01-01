@@ -1,0 +1,52 @@
+esphome:
+  name: ${node_name}
+  friendly_name: ${name}
+  comment: ${comment}
+  area: ${area}
+  project:
+    name: dackara.${node_name}
+    version: "1.0"
+
+# https://esphome.io/components/esp32.html
+esp32:
+  board: ${board}
+  framework:
+    type: ${framework_type}
+    version: ${framework_version}
+    platform_version: ${platform_version}
+# Captive Portal: https://esphome.io/components/captive_portal.html
+captive_portal:
+
+# Logger Component: https://esphome.io/components/logger.html
+logger:
+
+# Native API Component: https://esphome.io/components/api.html
+api:
+
+# OTA Update Component: https://esphome.io/components/ota.html
+ota:
+
+# Web Server: https://esphome.io/components/web_server.html
+web_server:
+  port: 80
+
+# Time: https://esphome.io/components/time.html
+time:
+  platform: homeassistant
+  id: homeassistant_time  
+
+# Status Binary Sensor: https://esphome.io/components/binary_sensor/status.html
+binary_sensor:
+  - platform: status
+    name: "${name} ESP Status"
+
+# Sensor:  https://esphome.io/components/sensor/index.html
+sensor:
+  # Uptime
+  - platform: uptime
+    name: "${name} ESP uptime"
+    id: uptime_sec 
+
+switch:
+  - platform: restart
+    name: "${name} ESP restart"
