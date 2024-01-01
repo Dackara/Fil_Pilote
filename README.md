@@ -7,7 +7,7 @@ Dévellopé pour [ESPHome](http://esphome.io).
 
 Automatisable sous [HA](http://homeassistant.io) très simplement en suivant par exemple ce tuto sur [HACF](https://hacf.fr/blog/confort-gestion-chauffage/).
 
-### Ce que permet la carte :
+## Ce que permet la carte :
 - Controler jusqu'a 4 zone de chauffage par carte.
   - Une seul carte parmet de contrôler jusqu'a 4 zones de chauffage en 6 ordres (plusieurs chauffage peuvent être cablé dans une même "zone").
   - Possibilité d'utiliser plusieur carte, de jumeler deux carte ensemble en n'utilisant qu'un seul i2c extender [SX1509](https://amzn.to/3vddUae) (via un système de pontage) et une seul [esp32](https://amzn.to/3RCapBQ).
