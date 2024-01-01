@@ -136,8 +136,8 @@ packages:
 
   # Déclaration du module TéléInfo Client
   teleinfo: !include 
-    file: packages/teleinfo_historique.yaml     # Si compteur en mode Historique
-#    file: packages/teleinfo_standard.yaml      # Si compteur en mode Standard
+    file: packages/teleinfo/historique.yaml     # Si compteur en mode Historique
+#    file: packages/teleinfo/standard.yaml      # Si compteur en mode Standard
     vars:
       linky_name: 'Linky'
       tic_id: 'myteleinfo'
