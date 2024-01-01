@@ -21,7 +21,7 @@ Automatisable sous [HA](http://homeassistant.io) très simplement en suivant par
 ## Le code ESPHome :
 Le code est simplifié pour la modification via `packages:` et `substitutions:`. Tout ce passe dans le fichier [Main](https://github.com/Dackara/Fil_Pilote/blob/main/esphome/fil-pilote.yaml).
 
-L'intégralité des fichier présent de [ce répertoire](https://github.com/Dackara/Fil_Pilote/tree/main/esphome) est necessaire à son bon fonctionnement.
+L'intégralité des fichier présent de [ce répertoire](https://github.com/Dackara/Fil_Pilote/tree/main/Software_esphome) est necessaire à son bon fonctionnement.
 
 ## Schema de principe :
 ![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/Schematic.png)
