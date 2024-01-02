@@ -46,7 +46,3 @@ L'intégralité des fichier présent de [ce répertoire](https://github.com/Dack
 - Schéma électronique : `@Dackara` & `@Luc`
 - Designe PCB : `@Dackara` & `@Bandit-17`
 - Code esphome : `@Dackara`
-
-### Si vous aimez mon travail et souhaitez me soutenir :
-
-[![alt text](https://assets-global.website-files.com/5c14e387dab576fe667689cf/64f1a9ddd0246590df69ea15_kofi_long_button_dark%25402x-p-500.png)](https://ko-fi.com/dackara)
