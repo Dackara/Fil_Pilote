@@ -1,12 +1,15 @@
-#*******************************************************# 
-#                                                       #
-#    EEEEE  SSSSS  PPPP   H   H   OOO   M   M  EEEEE    #
-#    E      S      P   P  H   H  O   O  MM MM  E        #
-#    EEE    SSSSS  PPPP   HHHHH  O   O  M M M  EEE      #
-#    E          S  P      H   H  O   O  M   M  E        #
-#    EEEEE  SSSSS  P      H   H   OOO   M   M  EEEEE    #
-#                                                       #
-#*******************************************************#
+
+###############################################################################################
+#                                                                                             #
+#   WWWWWWW# WWWWWW- =WW@         #WWWWWW*  =WWWWWW  #WW:      -#WWWWW@- *WWWWWWWW: WWWWWWW   #
+#   WWW:-::   @WW*   =WW@         #WW#:#WW=   WWW*   #WW:      #WW#-#WW@ -:-@WW=-:- WWW+--:   #
+#   WWW-      @WW*   =WW@         #WW= *WW=   WWW*   #WW:      @WW= *WW@    @WW=   -WWW:      #
+#   WWW*+++-  @WW*   =WW@         #WW#=WWW=   WWW*   #WW:      @WW= *WW@    @WW=   *WWW=+++   #
+#   WWWWWWW-  @WW*   =WW@:WW=     #WWWWW+     WWW*   #WW: :WW  @WW= *WW@    @WW=   *WWWWWWW   #
+#   WWW-      @WW=-  =WW@*WW#     #WW#       -WWW*-  #WW; ;WW  #WW@:#WW@    @WW=  -*WWW*,__   #
+#   WWW-    :WWWWWW- =WWWWWW@     #WW=      +WWWWWW  #WWWWWWW.  =WWWWW#     @WW=  -*WWWWWWW   #
+#                                                                                             #
+###############################################################################################
 
 substitutions:
   node_name: 'fil_pilote'
