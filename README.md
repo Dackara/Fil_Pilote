@@ -24,7 +24,7 @@ Automatisable sous [HA](http://homeassistant.io) très simplement en suivant par
 - En option, un module **TIC** (**T**élé **I**nformation **C**lient) pour communiquer avec les Compteur Linky est disponble.
 
 ## Le code ESPHome :
-Le code est simplifié pour la modification via `packages:` et `substitutions:`. Tout ce passe dans le fichier [Main](https://github.com/Dackara/Fil_Pilote/blob/main/esphome/fil-pilote.yaml).
+Le code est simplifié pour la modification via `packages:` et `substitutions:`. Tout ce passe dans le fichier [fil_pilote.yaml](https://github.com/Dackara/Fil_Pilote/blob/main/Software_esphome/fil_pilote.yaml) présent à la racine.
 
 L'intégralité des fichier présent de [ce répertoire](https://github.com/Dackara/Fil_Pilote/tree/main/Software_esphome) est necessaire à son bon fonctionnement.
 
