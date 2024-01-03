@@ -45,6 +45,7 @@ L'intégralité des fichiers présents de [ce répertoire](https://github.com/Da
 
 ### Fonctionnement du Fil Pilote :
 - Principe de fonctionnement en [image](https://github.com/Dackara/Fil_Pilote/blob/main/Image/Signal_fil_pilote.png).
+- Démonstration du fonctionnement des 6 ordres en [image](https://github.com/Dackara/Fil_Pilote/blob/main/Image/Fil_pilote_demo.png).
 
 ### Crédit :
 - Schéma électronique : `@Dackara` & `@Luc`
