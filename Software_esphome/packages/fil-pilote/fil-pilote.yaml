@@ -52,27 +52,27 @@ select:
               - lambda: |- 
                   return id(${fp1_id}_mode).state == "Confort -1" ;
             then:
+              - switch.turn_on: ${fp1_id}_positif
+              - switch.turn_on: ${fp1_id}_negatif
+              - delay: 3s
               - switch.turn_off: ${fp1_id}_positif
               - switch.turn_off: ${fp1_id}_negatif
               - delay: 
                   minutes: 4
                   seconds: 57
-              - switch.turn_on: ${fp1_id}_positif
-              - switch.turn_on: ${fp1_id}_negatif
-              - delay: 3s
         - while:
             condition:
               - lambda: |- 
                   return id(${fp1_id}_mode).state == "Confort -2" ;
             then:
+              - switch.turn_on: ${fp1_id}_positif
+              - switch.turn_on: ${fp1_id}_negatif
+              - delay: 7s
               - switch.turn_off: ${fp1_id}_positif
               - switch.turn_off: ${fp1_id}_negatif
               - delay: 
                   minutes: 4
                   seconds: 53
-              - switch.turn_on: ${fp1_id}_positif
-              - switch.turn_on: ${fp1_id}_negatif
-              - delay: 7s
          
 # Individual outputs
 output:
