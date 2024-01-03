@@ -6,29 +6,30 @@
 [![Static Badge](https://img.shields.io/badge/Sponsor-On_Github-darkgreen?logo=github&logoColor=lightgrey&style=plastic)](https://github.com/sponsors/Dackara)
 
 # Fil_Pilote
-Carte de Gestion Centralisé des `Fil Pilote` de chauffage, conçus pour être monté sur la carte [PVBRAIN v2.0](https://github.com/Bandit-17/PVBRAIN) dévellopé par [Bandit-17](https://github.com/Bandit-17) et [SeByDocKy](https://github.com/SeByDocKy) de la chaine Youtube [e-2-nomy](https://www.youtube.com/@e2nomy).
+Carte de Gestion Centralisé des `Fil Pilote` de chauffage, conçus pour être monté sur la carte [PVBRAIN v2.0](https://github.com/Bandit-17/PVBRAIN) développé par [Bandit-17](https://github.com/Bandit-17) et [SeByDocKy](https://github.com/SeByDocKy) de la chaine Youtube [e-2-nomy](https://www.youtube.com/@e2nomy). Mais utilisable sans celle-ci.
 
-Dévellopé pour [ESPHome](http://esphome.io).
+Développé pour [ESPHome](http://esphome.io).
 
 Automatisable sous [HA](http://homeassistant.io) très simplement en suivant par exemple ce tuto sur [HACF](https://hacf.fr/blog/confort-gestion-chauffage/).
 
 ## Ce que permet la carte :
-- Controler jusqu'a 4 zone de chauffage par carte.
-  - Une seul carte parmet de contrôler jusqu'a 4 zones de chauffage en 6 ordres (plusieurs chauffage peuvent être cablé dans une même "zone").
-  - Possibilité d'utiliser plusieur carte, de jumeler deux carte ensemble en n'utilisant qu'un seul i2c extender [SX1509](https://amzn.to/3vddUae) (via un système de pontage) et une seul [esp32](https://amzn.to/3RCapBQ).
+- Controler jusqu'à 4 zones de chauffage par carte.
+  - Une seule carte permet de contrôler jusqu'à 4 zones de chauffage en 6 ordres (plusieurs chauffages peuvent être câblés dans une même "zone").
+  - Possibilité d'utiliser plusieurs cartes, de jumeler deux cartes ensemble en n'utilisant qu'un seul i2c extender [SX1509](https://amzn.to/3vddUae) (via un système de pontage) et un seul [esp32](https://amzn.to/3RCapBQ).
   - Deux entrées de phase sont disponible par carte pour permettre le montage en Triphasé.
+  - Son design permet de réduire le cout de fabrication des PCB pour ceux qui souhaitent utiliser plus de 4 zones ou l'utiliser en Triphasé.
 - Utilisable en Monophasé ou Triphasé :
-  - En Monophasé : Une seul phase par carte, dans ce cas, faire un pontage sur **PH2**
-  - En Triphasé : deux phase par carte, jumelage de deux cartes pour obtenir `3x2` ou `2x2 + 1x4`. (Le signal **230V** envoyé au `Fil Pilote` doit provenir de la même `Phase` que l'allimentation du chauffage piloté !)
+  - En Monophasé : Une seule phase par carte, dans ce cas, faire le pontage sur **PH2** comme indiqué au verso de la carte.
+  - En Triphasé : deux phases par carte, jumelage de deux cartes pour obtenir `3x2` ou `2x2 + 1x4`. (Le signal **230V** envoyé au `Fil Pilote` doit provenir de la même `Phase` que l'allimentation du chauffage piloté !)
   - Possible aussi pour des montages moins courant d'avoir une phase sur `réseau ENEDIS-EDF` et une phase sur `système Solaire`.
-- En option, un module **TIC** (**T**élé **I**nformation **C**lient) pour communiquer avec les Compteur Linky est disponble.
+- En option, un module **TIC** (**T**élé **I**nformation **C**lient) pour communiquer avec les Compteurs Linky est disponble.
 
 ## Le code ESPHome :
 Le code est simplifié pour la modification via `packages:` et `substitutions:`. 
 
-Tout ce passe dans le fichier [fil_pilote.yaml](https://github.com/Dackara/Fil_Pilote/blob/main/Software_esphome/fil_pilote.yaml) présent à la racine.
+Tout se passe dans le fichier [fil_pilote.yaml](https://github.com/Dackara/Fil_Pilote/blob/main/Software_esphome/fil_pilote.yaml) présent à la racine.
 
-L'intégralité des fichier présent de [ce répertoire](https://github.com/Dackara/Fil_Pilote/tree/main/Software_esphome) est necessaire à son bon fonctionnement.
+L'intégralité des fichiers présents de [ce répertoire](https://github.com/Dackara/Fil_Pilote/tree/main/Software_esphome) est nécessaire à son bon fonctionnement.
 
 ## Schema de principe :
 ![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/Schematic.png)
