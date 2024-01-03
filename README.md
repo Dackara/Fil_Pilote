@@ -6,12 +6,14 @@
 [![Static Badge](https://img.shields.io/badge/Sponsor-On_Github-darkgreen?logo=github&logoColor=lightgrey&style=plastic)](https://github.com/sponsors/Dackara)
 
 # Fil_Pilote
-Carte de Gestion Centralisé des `Fil Pilote` de chauffage, conçus pour être monté sur la carte [PVBRAIN v2.0](https://github.com/Bandit-17/PVBRAIN) développé par [Bandit-17](https://github.com/Bandit-17) et [SeByDocKy](https://github.com/SeByDocKy) de la chaine Youtube [e-2-nomy](https://www.youtube.com/@e2nomy).
+Carte de Gestion Centralisé des `Fil Pilote` de chauffage.
+
+Design conçus pour être monté sur la carte [![Static Badge](https://img.shields.io/badge/PvBrain-v2.0-black?style=social&logo=quasar)](https://github.com/Bandit-17/PVBRAIN) développé par [![Static Badge](https://img.shields.io/badge/Bandit--17-black?logo=git&style=flat)](https://github.com/Bandit-17) et [![Static Badge](https://img.shields.io/badge/SeByDocKy-black?logo=git&style=flat)](https://github.com/SeByDocKy) de la chaine [![Static Badge](https://img.shields.io/badge/Youtube-e--2--nomy-black?style=social&logo=youtube)](https://www.youtube.com/@e2nomy).
 > Néanmoins utilisable sans celle-ci (le hardware fonctionne avec tout système compatible **i2c**).
 
-Développé pour [ESPHome](http://esphome.io).
+Développé pour [![Static Badge](https://img.shields.io/badge/ESPHome-_-black?logo=esphome&style=social)](https://esphome.io).
 
-Automatisable sous [HA](http://homeassistant.io) très simplement en suivant par exemple ce tuto sur [HACF](https://hacf.fr/blog/confort-gestion-chauffage/).
+Automatisable sous [![Static Badge](https://img.shields.io/badge/Home_Assistant-_-black?logo=homeassistant&style=social)](http://homeassistant.io) très simplement en suivant par exemple ce tuto sur [![Static Badge](https://img.shields.io/badge/HACF-_-black?logo=homebridge&style=social)](https://hacf.fr/blog/confort-gestion-chauffage/).
 
 ## Ce que permet la carte :
 - Controler jusqu'à 4 zones de chauffage par carte.
