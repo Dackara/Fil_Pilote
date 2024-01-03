@@ -6,7 +6,8 @@
 [![Static Badge](https://img.shields.io/badge/Sponsor-On_Github-darkgreen?logo=github&logoColor=lightgrey&style=plastic)](https://github.com/sponsors/Dackara)
 
 # Fil_Pilote
-Carte de Gestion Centralisé des `Fil Pilote` de chauffage, conçus pour être monté sur la carte [PVBRAIN v2.0](https://github.com/Bandit-17/PVBRAIN) développé par [Bandit-17](https://github.com/Bandit-17) et [SeByDocKy](https://github.com/SeByDocKy) de la chaine Youtube [e-2-nomy](https://www.youtube.com/@e2nomy). Mais utilisable sans celle-ci (le hardware fonctionne avec tout système compatible **i2c**).
+Carte de Gestion Centralisé des `Fil Pilote` de chauffage, conçus pour être monté sur la carte [PVBRAIN v2.0](https://github.com/Bandit-17/PVBRAIN) développé par [Bandit-17](https://github.com/Bandit-17) et [SeByDocKy](https://github.com/SeByDocKy) de la chaine Youtube [e-2-nomy](https://www.youtube.com/@e2nomy).
+> Néanmoins utilisable sans celle-ci (le hardware fonctionne avec tout système compatible **i2c**).
 
 Développé pour [ESPHome](http://esphome.io).
 
