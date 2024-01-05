@@ -9,10 +9,10 @@
 > [!IMPORTANT]
 > Carte de **Gestion Centralisé** des `Fil Pilote` de chauffage.
 > 
-> Design conçus pour être monté sur la carte [![Static Badge](https://img.shields.io/badge/PvBrain-v2.0-black?style=social&logo=quasar)](https://github.com/Bandit-17/PVBRAIN) développé par [![Static Badge](https://img.shields.io/badge/Bandit--17-black?logo=git&style=flat)](https://github.com/Bandit-17) et [![Static Badge](https://img.shields.io/badge/SeByDocKy-black?logo=git&style=flat)](https://github.com/SeByDocKy) de la chaine [![Static Badge](https://img.shields.io/badge/Youtube-e--2--nomy-black?style=social&logo=youtube)](https://www.youtube.com/@e2nomy).
+> Design conçus pour être monté sur la carte [![Static Badge](https://img.shields.io/badge/PvBrain-v2.0-black?style=social&logo=quasar)](https://github.com/SeByDocKy/pvbrain2) développé par [![Static Badge](https://img.shields.io/badge/Bandit--17-black?logo=git&style=flat)](https://github.com/Bandit-17) et [![Static Badge](https://img.shields.io/badge/SeByDocKy-black?logo=git&style=flat)](https://github.com/SeByDocKy) de la chaine [![Static Badge](https://img.shields.io/badge/Youtube-e--2--nomy-black?style=social&logo=youtube)](https://www.youtube.com/@e2nomy).
 
 > [!NOTE]
-> La carte `Fil Pilote` est néanmoins totalement utilisable sans la carte [![Static Badge](https://img.shields.io/badge/PvBrain-v2.0-black?style=social&logo=quasar)](https://github.com/Bandit-17/PVBRAIN) (le hardware fonctionne avec nimporte quel ESP32 / ESP8266, ou tout autre système compatible **i2c**).
+> La carte `Fil Pilote` est néanmoins totalement utilisable sans la carte [![Static Badge](https://img.shields.io/badge/PvBrain-v2.0-black?style=social&logo=quasar)](https://github.com/SeByDocKy/pvbrain2) (le hardware fonctionne avec nimporte quel ESP32 / ESP8266, ou tout autre système compatible **i2c**).
 >
 > L'intéret est que les trous de fixation des deux carte correspondent. Cela permet de les imbriquer l'une sur l'autre, tout en profitant de l'[esp32](https://amzn.to/3RCapBQ) déja présent sur le PvBrain.
 
