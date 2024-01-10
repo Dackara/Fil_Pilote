@@ -27,6 +27,14 @@ substitutions:
   # ID du bus I2C
   i2c_id_fp_bus: 'bus_i2c_fp' 
   
+# This should point to the public location of this yaml file.
+dashboard_import:
+  package_import_url: github://Dackara/Fil_Pilote/Software_esphome/fil_pilote.yaml
+
+# Configuring Wi-Fi on an ESP32 device by using Bluetooth
+esp32_improv:
+  authorizer: false
+  
 # https://esphome.io/guides/configuration-types#packages
 packages:
   wifi: !include 
