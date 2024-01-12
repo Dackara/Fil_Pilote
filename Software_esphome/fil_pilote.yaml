@@ -33,20 +33,30 @@ dashboard_import:
 
 # Configuring Wi-Fi on an ESP32 device by using Bluetooth
 esp32_improv:
-  authorizer: false
-  
+  authorizer: none
+
+# Sets up the improv via serial client for Wi-Fi provisioning.
+# Handy if your device has a usb port for the user to add credentials when they first get it.
+improv_serial:
+
+# WiFi Component: https://esphome.io/components/wifi.html
+wifi:
+  ssid: !secret esphome_ssid
+  password: !secret esphome_password
+  # Economie d'energie du wifi, (#light par defaut sur ESP32). Plus l'économie est grande, plus les déconnexions peuvent être fréquentes.
+  power_save_mode: 'none'  #'none' #'light' #'hight'
+  # Optional manual IP
+  manual_ip:
+    static_ip: '192.168.0.174' # '192.168.0.21'
+    gateway: '192.168.0.109'
+    subnet: '255.255.255.0'
+  ap:
+    ssid: 'Espilote Fallback Hotspot'
+    password: !secret esphome_password
+    
 # https://esphome.io/guides/configuration-types#packages
 packages:
-  wifi: !include 
-    file: packages/wifi.yaml
-    vars:
-      ssid: !secret esphome_ssid
-      password: !secret esphome_password
-      power_save_mode: 'none'  #'none' #'light' #'hight'
-      static_ip: '192.168.0.174' # '192.168.0.21'
-      gateway: '192.168.0.109'
-      subnet: '255.255.255.0'
-      ap_ssid: 'Espilote Fallback Hotspot'
+  wifi: !include packages/wifi.yaml
   device_base: !include packages/device_base.yaml
   
   # Déclaration du bus I2C et du composant SX1509 :
