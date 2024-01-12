@@ -1,18 +1,3 @@
-# WiFi Component: https://esphome.io/components/wifi.html
-wifi:
-  ssid: ${ssid}
-  password: ${password}
-  # Economie d'energie du wifi, (#light par defaut sur ESP32). Plus l'économie est grande, plus les déconnexions peuvent être fréquentes.
-  power_save_mode: ${power_save_mode}
-  # Optional manual IP
-  manual_ip:
-    static_ip: ${static_ip}
-    gateway: ${gateway}
-    subnet: ${subnet}
-  ap:
-    ssid: ${ap_ssid}
-    password: ${password}
-
 # Sensor:  https://esphome.io/components/sensor/index.html
 sensor:
   # WiFi
