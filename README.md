@@ -29,7 +29,7 @@
  > - Possibilité d'utiliser plusieurs cartes, de jumeler deux cartes ensemble en n'utilisant qu'un seul i2c extender [SX1509](https://amzn.to/3vddUae) (via un système de pontage) et un seul [esp32](https://amzn.to/3RCapBQ).
  > - Deux entrées de phase sont disponible par carte pour permettre le montage en Triphasé.
  > - Son design permet de réduire le coût de fabrication des PCB pour ceux qui souhaitent utiliser plus de 4 zones ou l'utiliser en Triphasé.
-### Être utilisé en Monophasé ou Triphasé :
+### Utilisation en Monophasé ou Triphasé :
  > - En Monophasé : Une seule phase par carte, dans ce cas, faire le pontage sur **PH2** comme indiqué au verso de la carte.
  > - En Triphasé : deux phases par carte, jumelage de deux cartes pour obtenir `3x2` ou `2x2 + 1x4`. (Le signal **230V** envoyé au `Fil Pilote` doit provenir de la même `Phase` que l'allimentation du chauffage piloté !)
  > - Possible aussi pour des montages moins courant d'avoir une phase sur `réseau ENEDIS-EDF` et une phase sur `système Solaire`.
