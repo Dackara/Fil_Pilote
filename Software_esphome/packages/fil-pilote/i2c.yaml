@@ -1,7 +1,0 @@
-# I2C : https://esphome.io/components/i2c
-i2c:
-  - id: ${i2c_id_fp}
-    sda: ${i2c_sda_fp}  
-    scl: ${i2c_scl_fp}  
-    scan: true
-    frequency: 50kHz

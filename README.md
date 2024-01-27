@@ -16,7 +16,7 @@
 >
 > L'intéret est que les trous de fixation des deux carte correspondent. Cela permet de les imbriquer l'une sur l'autre, tout en profitant de l'[esp32](https://amzn.to/3RCapBQ) déja présent sur le PvBrain.
 > 
-> Montage sur le [PVbrain v1](https://github.com/Bandit-17/PVBRAIN) également [possible](https://github.com/Dackara/Fil_Pilote/blob/main/Image/PVBRAIN1_and_Fil_Pilote.png).
+> Montage sur le [![Static Badge](https://img.shields.io/badge/PvBrain-v1.0-black?style=social&logo=quasar)](https://github.com/Bandit-17/PVBRAIN) également [possible](https://github.com/Dackara/Fil_Pilote/blob/main/Image/PVBRAIN1_and_Fil_Pilote.png).
 
 > [!TIP]
 > Développé pour [![Static Badge](https://img.shields.io/badge/ESPHome-_-black?logo=esphome&style=social)](https://esphome.io).
