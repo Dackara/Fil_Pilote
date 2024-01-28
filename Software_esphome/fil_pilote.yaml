@@ -50,7 +50,7 @@ web_server:
 
 # This should point to the public location of this yaml file.
 dashboard_import:
-  package_import_url: github://dackara/fil_pilote/software_esphome/fil_pilote.yaml
+  package_import_url: github://dackara/fil_pilote/software_esphome/fil_pilote.yaml@main
   import_full_config: false #true
 
 # WiFi Component: https://esphome.io/components/wifi.html
