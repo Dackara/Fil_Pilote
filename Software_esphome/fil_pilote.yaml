@@ -164,8 +164,8 @@ packages:
 
   # Déclaration du module TéléInfo Client
   teleinfo: !include 
-    file: packages/addons/teleinfo/historique.yaml      # Si compteur en mode "Historique"
-#    file: packages/addons/teleinfo/standard.yaml       # Si compteur en mode "Standard"
+    file: packages/teleinfo/historique.yaml      # Si compteur en mode "Historique"
+#    file: packages/teleinfo/standard.yaml       # Si compteur en mode "Standard"
     vars:
       linky_name: 'myteleinfo'
       linky_uartid: uart_esp_0
