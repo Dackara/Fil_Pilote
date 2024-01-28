@@ -35,29 +35,7 @@ sensor:
    
   # Uptime
   - platform: uptime
-    id: uptime_sec
-    
-  - platform: template
-    name: ${name}_uptime
-    lambda: |-
-      int seconds = (id(uptime_sec).state);
-      int days = seconds / (24 * 3600);
-      seconds = seconds % (24 * 3600); 
-      int hours = seconds / 3600;
-      seconds = seconds % 3600;
-      int minutes = seconds /  60;
-      seconds = seconds % 60;
-      if ( days ) {
-        return { (std::to_string(days) +"d " + std::to_string(hours) +"h " + std::to_string(minutes) +"m "+ std::to_string(seconds) +"s ").c_str() };
-      } else if ( hours ) {
-        return { (std::to_string(hours) +"h " + std::to_string(minutes) +"m "+ std::to_string(seconds) +"s ").c_str() };
-      } else if ( minutes ) {
-        return { (std::to_string(minutes) +"m "+ std::to_string(seconds) +"s ").c_str() };
-      } else {
-        return { (std::to_string(seconds) +"s ").c_str() };
-      }
-    icon: mdi:clock-start
-    update_interval: 113s    
+    id: uptime_sec  
   
 text_sensor:
   - platform: wifi_info

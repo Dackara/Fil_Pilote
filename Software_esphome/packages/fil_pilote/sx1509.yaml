@@ -1,5 +1,0 @@
-# SX1509 : https://esphome.io/components/sx1509.html
-sx1509:
-  - id: ${sx1509_fp}
-    i2c_id: ${i2c_id_fp}
-    address: ${sx1509_address_fp}
