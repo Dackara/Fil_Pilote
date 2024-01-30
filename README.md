@@ -43,18 +43,15 @@ Tout se passe dans le fichier [fil_pilote.yaml](https://github.com/Dackara/Fil_P
 
 L'intégralité des fichiers présents de [ce répertoire](https://github.com/Dackara/Fil_Pilote/tree/main/Software_esphome) est nécessaire à son bon fonctionnement.
 
-## Schema de principe :
-![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/Schematic.png)
-
 ## La carte :
 - Fichier **Gerber** et **BOM** : [Dossier Hardware](https://github.com/Dackara/Fil_Pilote/tree/main/Hardware)
 
-| Face avant                | Face arrière       |
-| :---------:               | :----------:       |
+| Face avant                | Face arrière              |
+| :-----------------------: | :-----------------------: |
 | ![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/TopSide.png) | ![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/BottomSide.png) |
-| __Vue 3D__                | __Circuit__        |
+| __Vue 3D__                | __Circuit__               |
 | ![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/3D_View.png) | ![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/Circuit.png) |
-| __Schematic Fil Pilote__  | __Schematic TIC__  |
+| __Schematic Fil Pilote__  | __Schematic TIC__         |
 | ![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/SchematicFP.png) | ![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/SchematicTIC.png) |
 
 ### Fonctionnement du Fil Pilote :
@@ -62,6 +59,6 @@ L'intégralité des fichiers présents de [ce répertoire](https://github.com/Da
 - Démonstration du fonctionnement des 6 ordres en [image](https://github.com/Dackara/Fil_Pilote/blob/main/Image/Fil_pilote_demo.png).
 
 ### Crédit :
-- Schéma électronique : `@Dackara` & `@Luc`
-- Designe PCB : `@Dackara` & `@Bandit-17`
-- Code esphome : `@Dackara`
+- Schéma électronique : [![Static Badge](https://img.shields.io/badge/Dackara-black?logo=git&style=flat)](https://github.com/Dackara) & ![Static Badge](https://img.shields.io/badge/Luc-black?logo=git&style=flat)
+- Designe PCB : [![Static Badge](https://img.shields.io/badge/Dackara-black?logo=git&style=flat)](https://github.com/Dackara) & [![Static Badge](https://img.shields.io/badge/Bandit--17-black?logo=git&style=flat)](https://github.com/Bandit-17)
+- Code esphome : [![Static Badge](https://img.shields.io/badge/Dackara-black?logo=git&style=flat)](https://github.com/Dackara)
