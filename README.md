@@ -47,12 +47,13 @@ L'intégralité des fichiers présents de [ce répertoire](https://github.com/Da
 ![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/Schematic.png)
 
 ## La carte :
-- **Gerber** files : `arrive dès que définitivement validé`
-- **B**ill **O**f **M**aterials : [BOM files](https://github.com/Dackara/Fil_Pilote/blob/main/Hardware/BOM_Fil_Pilote_Mini_v1_2024-01-01.csv)
-![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/Circuit.png)
-![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/TopSide.png)
-![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/BottomSide.png)
-![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/3D_View.png)
+- Fichier **Gerber** et **BOM** : [Dossier Hardware](https://github.com/Dackara/Fil_Pilote/tree/main/Hardware)
+
+| Face avant  | Face arrière |
+| :---------: | :----------: |
+| ![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/TopSide.png) | ![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/BottomSide.png) |
+| __Vue 3D__  | __Circuit__  |
+| ![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/3D_View.png) | ![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/Circuit.png) |
 
 ### Fonctionnement du Fil Pilote :
 - Principe de fonctionnement en [image](https://github.com/Dackara/Fil_Pilote/blob/main/Image/Signal_fil_pilote.png).
