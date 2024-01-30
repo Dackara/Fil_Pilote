@@ -49,11 +49,13 @@ L'intégralité des fichiers présents de [ce répertoire](https://github.com/Da
 ## La carte :
 - Fichier **Gerber** et **BOM** : [Dossier Hardware](https://github.com/Dackara/Fil_Pilote/tree/main/Hardware)
 
-| Face avant  | Face arrière |
-| :---------: | :----------: |
+| Face avant                | Face arrière       |
+| :---------:               | :----------:       |
 | ![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/TopSide.png) | ![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/BottomSide.png) |
-| __Vue 3D__  | __Circuit__  |
+| __Vue 3D__                | __Circuit__        |
 | ![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/3D_View.png) | ![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/Circuit.png) |
+| __Schematic Fil Pilote__  | __Schematic TIC__  |
+| ![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/SchematicFP.png) | ![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/SchematicTIC.png) |
 
 ### Fonctionnement du Fil Pilote :
 - Principe de fonctionnement en [image](https://github.com/Dackara/Fil_Pilote/blob/main/Image/Signal_fil_pilote.png).
