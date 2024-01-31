@@ -41,7 +41,7 @@ Le code est simplifié pour la modification via `packages:` et `substitutions:`.
 
 Tout se passe dans le fichier [fil_pilote.yaml](https://github.com/Dackara/Fil_Pilote/blob/main/Software_esphome/fil_pilote.yaml) présent à la racine.
 
-L'intégralité des fichiers présents de [ce répertoire](https://github.com/Dackara/Fil_Pilote/tree/main/Software_esphome) est nécessaire à son bon fonctionnement.
+L'intégralité des fichiers présents dans [ce répertoire](https://github.com/Dackara/Fil_Pilote/tree/main/Software_esphome) est nécessaire à son bon fonctionnement.
 
 ## La carte :
 - Fichier **Gerber** et **BOM** : [Dossier Hardware](https://github.com/Dackara/Fil_Pilote/tree/main/Hardware)
