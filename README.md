@@ -3,20 +3,20 @@
 [![Static Badge](https://img.shields.io/badge/Donate-ko--fi_%E2%99%A5-pink?logo=kofi&style=plastic)](https://ko-fi.com/dackara)
 [![Static Badge](https://img.shields.io/badge/Sponsor-On_Github-darkgreen?logo=github&logoColor=lightgrey&style=plastic)](https://github.com/sponsors/Dackara)
 
-![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/Photo/IMG_3848.JPG)
+![alt text](../main/Image/Photo/IMG_3848.JPG)
 
 # Fil_Pilote
 > [!IMPORTANT]
 > Carte de **Gestion Centralisé** des `Fil Pilote` de chauffage.
 > 
-> Design conçus pour être [monté](https://github.com/Dackara/Fil_Pilote/blob/main/Image/PVBRAIN2_and_Fil_Pilote.png) sur la carte [![Static Badge](https://img.shields.io/badge/PvBrain-v2.0-black?style=social&logo=quasar)](https://github.com/SeByDocKy/pvbrain2) développé par [![Static Badge](https://img.shields.io/badge/Bandit--17-black?logo=git&style=flat)](https://github.com/Bandit-17) et [![Static Badge](https://img.shields.io/badge/SeByDocKy-black?logo=git&style=flat)](https://github.com/SeByDocKy) de la chaine [![Static Badge](https://img.shields.io/badge/Youtube-e--2--nomy-black?style=social&logo=youtube)](https://www.youtube.com/@e2nomy).
+> Design conçus pour être [monté](../main/Image/Exemple/PVBRAIN2_and_Fil_Pilote.png) sur la carte [![Static Badge](https://img.shields.io/badge/PvBrain-v2.0-black?style=social&logo=quasar)](https://github.com/SeByDocKy/pvbrain2) développé par [![Static Badge](https://img.shields.io/badge/Bandit--17-black?logo=git&style=flat)](https://github.com/Bandit-17) et [![Static Badge](https://img.shields.io/badge/SeByDocKy-black?logo=git&style=flat)](https://github.com/SeByDocKy) de la chaine [![Static Badge](https://img.shields.io/badge/Youtube-e--2--nomy-black?style=social&logo=youtube)](https://www.youtube.com/@e2nomy).
 
 > [!NOTE]
 > La carte `Fil Pilote` est néanmoins totalement utilisable sans la carte [![Static Badge](https://img.shields.io/badge/PvBrain-v2.0-black?style=social&logo=quasar)](https://github.com/SeByDocKy/pvbrain2) (le hardware fonctionne avec nimporte quel ESP32 / ESP8266, ou tout autre système compatible **i2c**).
 >
 > L'intéret est que les trous de fixation des deux carte correspondent. Cela permet de les imbriquer l'une sur l'autre, tout en profitant de l'[esp32](https://amzn.to/3RCapBQ) déja présent sur le PvBrain.
 > 
-> Montage sur le [![Static Badge](https://img.shields.io/badge/PvBrain-v1.0-black?style=social&logo=quasar)](https://github.com/Bandit-17/PVBRAIN) également [possible](https://github.com/Dackara/Fil_Pilote/blob/main/Image/PVBRAIN1_and_Fil_Pilote.png).
+> Montage sur le [![Static Badge](https://img.shields.io/badge/PvBrain-v1.0-black?style=social&logo=quasar)](https://github.com/Bandit-17/PVBRAIN) également [possible](../main/Image/Exemple/PVBRAIN1_and_Fil_Pilote.png).
 
 > [!TIP]
 > Développé pour [![Static Badge](https://img.shields.io/badge/ESPHome-_-black?logo=esphome&style=social)](https://esphome.io).
@@ -39,24 +39,24 @@
 ## Le code ESPHome :
 Le code est simplifié pour la modification via `packages:` et `substitutions:`. 
 
-Tout se passe dans le fichier [fil_pilote.yaml](https://github.com/Dackara/Fil_Pilote/blob/main/Software_esphome/fil_pilote.yaml) présent à la racine.
+Tout se passe dans le fichier [fil_pilote.yaml](../main/Software_esphome/fil_pilote.yaml) présent à la racine.
 
-L'intégralité des fichiers présents dans [ce répertoire](https://github.com/Dackara/Fil_Pilote/tree/main/Software_esphome) est nécessaire à son bon fonctionnement.
+L'intégralité des fichiers présents dans [ce répertoire](../main/Software_esphome) est nécessaire à son bon fonctionnement.
 
 ## La carte :
-- Fichier **Gerber** et **BOM** : [Dossier Hardware](https://github.com/Dackara/Fil_Pilote/tree/main/Hardware)
+- Fichier **Gerber** et **BOM** : [Dossier Hardware](../main/Hardware)
 
 | Face avant                | Face arrière              |
 | :-----------------------: | :-----------------------: |
-| ![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/TopSide.png) | ![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/BottomSide.png) |
+| ![alt text](../main/Image/TopSide.png) | ![alt text](../main/Image/BottomSide.png) |
 | __Vue 3D__                | __Circuit__               |
-| ![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/3D_View.png) | ![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/Circuit.png) |
+| ![alt text](../main/Image/3D_View.png) | ![alt text](../main/Image/Circuit.png) |
 | __Schematic Fil Pilote__  | __Schematic TIC__         |
-| ![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/SchematicFP.png) | ![alt text](https://github.com/Dackara/Fil_Pilote/blob/main/Image/SchematicTIC.png) |
+| ![alt text](../main/Image/SchematicFP.png) | ![alt text](../main/Image/SchematicTIC.png) |
 
 ### Fonctionnement du Fil Pilote :
-- Principe de fonctionnement en [image](https://github.com/Dackara/Fil_Pilote/blob/main/Image/Signal_fil_pilote.png).
-- Démonstration du fonctionnement des 6 ordres en [image](https://github.com/Dackara/Fil_Pilote/blob/main/Image/Fil_pilote_demo.png).
+- Principe de fonctionnement en [image](../Image/Exemple/Signal_fil_pilote.png).
+- Démonstration du fonctionnement des 6 ordres en [image](../Image/Exemple/Fil_pilote_demo.png).
 
 ### Crédit :
 - Schéma électronique : [![Static Badge](https://img.shields.io/badge/Dackara-black?logo=git&style=flat)](https://github.com/Dackara) & ![Static Badge](https://img.shields.io/badge/Luc-black?logo=git&style=flat)
