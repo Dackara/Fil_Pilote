@@ -62,3 +62,9 @@ L'intégralité des fichiers présents dans [ce répertoire](../main/Software_es
 - Schéma électronique : [![Static Badge](https://img.shields.io/badge/Dackara-black?logo=git&style=flat)](https://github.com/Dackara) & ![Static Badge](https://img.shields.io/badge/Luc-black?logo=git&style=flat)
 - Designe PCB : [![Static Badge](https://img.shields.io/badge/Dackara-black?logo=git&style=flat)](https://github.com/Dackara) & [![Static Badge](https://img.shields.io/badge/Bandit--17-black?logo=git&style=flat)](https://github.com/Bandit-17)
 - Code esphome : [![Static Badge](https://img.shields.io/badge/Dackara-black?logo=git&style=flat)](https://github.com/Dackara)
+
+## Impression 3D :
+[Fichier 3D](../main/Hardware/3D_Print) à imprimer pour montage de la carte sur rail DIN (tableau électrique).
+| Face avant                | Face arrière              |
+| :-----------------------: | :-----------------------: |
+| ![alt text](../main/Hardware/3D_Print/3D_front.png) | ![alt text](../main/Hardware/3D_Print/3D_back.png) |
