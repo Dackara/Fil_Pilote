@@ -12,9 +12,9 @@
 > Design conçus pour être [monté](../main/Image/Exemple/PVBRAIN2_and_Fil_Pilote.png) sur la carte [![Static Badge](https://img.shields.io/badge/PvBrain-v2.0-black?style=social&logo=quasar)](https://github.com/SeByDocKy/pvbrain2) développé par [![Static Badge](https://img.shields.io/badge/Bandit--17-black?logo=git&style=flat)](https://github.com/Bandit-17) et [![Static Badge](https://img.shields.io/badge/SeByDocKy-black?logo=git&style=flat)](https://github.com/SeByDocKy) de la chaine [![Static Badge](https://img.shields.io/badge/Youtube-e--2--nomy-black?style=social&logo=youtube)](https://www.youtube.com/@e2nomy).
 
 > [!NOTE]
-> La carte `Fil Pilote` est néanmoins totalement utilisable sans la carte [![Static Badge](https://img.shields.io/badge/PvBrain-v2.0-black?style=social&logo=quasar)](https://github.com/SeByDocKy/pvbrain2) (le hardware fonctionne avec nimporte quel ESP32 / ESP8266, ou tout autre système compatible **i2c**).
+> La carte `Fil Pilote` est néanmoins totalement utilisable sans la carte [![Static Badge](https://img.shields.io/badge/PvBrain-v2.0-black?style=social&logo=quasar)](https://github.com/SeByDocKy/pvbrain2) (le hardware fonctionne avec n'importe quel ESP32 / ESP8266, ou tout autre système compatible **i2c**).
 >
-> L'intéret est que les trous de fixation des deux carte correspondent. Cela permet de les imbriquer l'une sur l'autre, tout en profitant de l'[esp32](https://amzn.to/3RCapBQ) déja présent sur le PvBrain.
+> L'intérêt est que les trous de fixation des deux carte correspondent. Cela permet de les imbriquer l'une sur l'autre, tout en profitant de l'[esp32](https://amzn.to/3RCapBQ) déjà présent sur le PvBrain.
 > 
 > Montage sur le [![Static Badge](https://img.shields.io/badge/PvBrain-v1.0-black?style=social&logo=quasar)](https://github.com/Bandit-17/PVBRAIN) également [possible](../main/Image/Exemple/PVBRAIN1_and_Fil_Pilote.png).
 
@@ -24,7 +24,7 @@
 > Automatisable sous [![Static Badge](https://img.shields.io/badge/Home_Assistant-_-black?logo=homeassistant&style=social)](http://homeassistant.io) très simplement en suivant par exemple ce tuto sur [![Static Badge](https://img.shields.io/badge/HACF-_-black?logo=homebridge&style=social)](https://hacf.fr/blog/confort-gestion-chauffage/).
 
 ## Ce que permet la carte :
-### Controler jusqu'à 4 zones de chauffage par carte :
+### Contrôler jusqu'à 4 zones de chauffage par carte :
  > - Une seule carte permet de contrôler jusqu'à 4 zones de chauffage en 6 ordres (plusieurs chauffages peuvent être câblés dans une même "zone").
  > - Possibilité d'utiliser plusieurs cartes, de jumeler deux cartes ensemble en n'utilisant qu'un seul i2c extender [SX1509](https://amzn.to/3vddUae) (via un système de pontage) et un seul [esp32](https://amzn.to/3RCapBQ).
  > - Deux entrées de phase sont disponible par carte pour permettre le montage en Triphasé.
