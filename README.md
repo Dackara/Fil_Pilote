@@ -55,8 +55,8 @@ L'intégralité des fichiers présents dans [ce répertoire](../main/Software_es
 | ![alt text](../main/Image/SchematicFP.png) | ![alt text](../main/Image/SchematicTIC.png) |
 
 ### Fonctionnement du Fil Pilote :
-- Principe de fonctionnement en [image](../Image/Exemple/Signal_fil_pilote.png).
-- Démonstration du fonctionnement des 6 ordres en [image](../Image/Exemple/Fil_pilote_demo.png).
+- Principe de fonctionnement en [image](../main/Image/Exemple/Signal_fil_pilote.png).
+- Démonstration du fonctionnement des 6 ordres en [image](../main/Image/Exemple/Fil_pilote_demo.png).
 
 ### Crédit :
 - Schéma électronique : [![Static Badge](https://img.shields.io/badge/Dackara-black?logo=git&style=flat)](https://github.com/Dackara) & ![Static Badge](https://img.shields.io/badge/Luc-black?logo=git&style=flat)
